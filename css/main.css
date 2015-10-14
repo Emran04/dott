@@ -8,6 +8,53 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  line-height: 1.5; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+ul li {
+  list-style: none; }
+
+/* Import partials
+ ----------------------------------*/
+/* Header Styles
+ ----------------------------------*/
+.header-top {
+  background-color: #f6f6f6; }
+
+.header-top p {
+  color: #2d2e2e;
+  font-size: 12px; }
+
+.main-menu {
+  background-color: #2d2e2e; }
+
+.logo {
+  display: inline-block;
+  margin-top: 30px; }
+
+ul.main-menu-u {
+  min-height: 84px; }
+  ul.main-menu-u li {
+    float: left; }
+    ul.main-menu-u li a {
+      color: #f6f6f6;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-right: 18px;
+      padding-left: 18px;
+      display: block;
+      font-size: 16px; }
+      ul.main-menu-u li a:hover {
+        text-decoration: none;
+        color: #fff;
+        background-color: #383939; }
+
+.navbar-toggle .icon-bar {
+  background-color: #f6f6f6; }
 
 /*# sourceMappingURL=main.css.map */
