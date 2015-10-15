@@ -1,0 +1,29 @@
+.btn-prim {
+	border-radius: 20px;
+	padding: 10px 30px;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 500;
+	background-color: $color-prim;
+	transition: .2s ease-in-out 0s;
+	color: #fff;
+	&:hover {
+		background-color: $color-sec;
+		color: #fff;
+	}
+}
+
+.btn-sec {
+	border-radius: 20px;
+	padding: 10px 30px;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 500;
+	background-color: $color-sec;
+	transition: .2s ease-in-out 0s;
+	color: #fff;
+	&:hover {
+		background-color: $color-prim;
+		color: #fff;
+	}
+}

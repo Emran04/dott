@@ -18,4 +18,42 @@
  	list-style: none;
  }
 
- 
+ /* Typography
+ ----------------------------------*/
+h1 {
+	font-size: 40px;
+	color: $color-text-base;
+	font-weight: 500;
+ }
+
+h2 {
+	font-size: 36px;
+	font-weight: 500;
+	color: $color-text-base;
+}
+
+h3 {
+	font-weight: 400;
+	font-size: 20px;
+	color: $color-text-base;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 300;
+	color: #666666;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+  &:link {
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: #fff;
+  }
+}

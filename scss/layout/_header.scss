@@ -16,12 +16,21 @@
  .logo {
  	display:inline-block;
  	margin-top: 30px;
+ 		@media #{$brk-narrow} {
+	 		margin-top: 0;
+  		padding: 15px;
+	 	}
  }
-
  ul.main-menu-u {
  	min-height: 84px;
+ 	@media #{$brk-narrow} {
+ 		width: 100%;
+ 	}
 	li {
 		float: left;
+		@media #{$brk-narrow} {
+			float: initial;
+		}
 		a {
 			color: #f6f6f6;
 	    padding-top: 30px;
@@ -30,6 +39,9 @@
 	    padding-left: 18px;
 	    display: block;
 	    font-size: 16px;
+	    @media #{$brk-narrow} {
+				padding: 15px;
+			}
 			&:hover {
 				text-decoration: none;
 				color: #fff;

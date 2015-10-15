@@ -1,0 +1,12 @@
+// underline
+	%underline {
+		&::after {
+			background-color: #2d2e2e;
+			bottom: 0;
+			content: "";
+			height: 2px;
+			position: absolute;
+			right: 47%;
+			width: 30px;
+		}
+	}
