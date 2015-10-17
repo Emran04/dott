@@ -153,3 +153,41 @@
 		}
 	}
 }
+
+.work-together {
+	padding-top: 115px;
+	padding-bottom: 115px;
+	h1 {
+		position: relative;
+		padding-bottom: 20px;
+		margin-bottom: 40px;
+		@extend %underline;
+		&:after {
+			left: 0;
+		}
+	}
+}
+
+.brands-area {
+	background-color: #f6f6f6;
+	padding: 50px 0;
+}
+
+ul.brands {
+	li {
+		float: left;
+		width: 16.66667%;
+	}		
+}
+
+.tweet-area {
+	background-color: #40affd;
+	padding: 20px 0;
+	p {
+		color: #fff;
+		font-size: 14px;
+	}
+	i {
+		font-size: 22px;
+	}
+}

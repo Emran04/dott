@@ -51,7 +51,7 @@ a:visited {
 
 /* Import partials
  ----------------------------------*/
-.project-details h3::after, .promo-hd::after, .single-promo h3::after, .call-action-hd::after, .project-hd h2::after, .project-overlay h2::after {
+.project-details h3::after, .promo-hd::after, .single-promo h3::after, .call-action-hd::after, .project-hd h2::after, .project-overlay h2::after, .work-together h1::after {
   background-color: #2d2e2e;
   bottom: 0;
   content: "";
@@ -225,6 +225,33 @@ ul.main-menu-u {
     width: 8%;
     margin-right: 1%; }
 
+.work-together {
+  padding-top: 115px;
+  padding-bottom: 115px; }
+  .work-together h1 {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 40px; }
+    .work-together h1:after {
+      left: 0; }
+
+.brands-area {
+  background-color: #f6f6f6;
+  padding: 50px 0; }
+
+ul.brands li {
+  float: left;
+  width: 16.66667%; }
+
+.tweet-area {
+  background-color: #40affd;
+  padding: 20px 0; }
+  .tweet-area p {
+    color: #fff;
+    font-size: 14px; }
+  .tweet-area i {
+    font-size: 22px; }
+
 .btn-prim {
   border-radius: 20px;
   padding: 10px 30px;
@@ -250,5 +277,8 @@ ul.main-menu-u {
   .btn-sec:hover {
     background-color: #2d2e2e;
     color: #fff; }
+
+.btn {
+  border-color: transparent; }
 
 /*# sourceMappingURL=main.css.map */
