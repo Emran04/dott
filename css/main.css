@@ -49,6 +49,13 @@ a:link {
 a:visited {
   color: #fff; }
 
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%; }
+
+*:focus {
+  outline: none; }
+
 /* Import partials
  ----------------------------------*/
 .project-details h3::after, .promo-hd::after, .single-promo h3::after, .call-action-hd::after, .project-hd h2::after, .project-overlay h2::after, .work-together h1::after {
@@ -251,6 +258,96 @@ ul.brands li {
     font-size: 14px; }
   .tweet-area i {
     font-size: 22px; }
+
+.footer-area {
+  background-color: #2d2e2e;
+  padding-top: 60px; }
+  .footer-area .footer-single h3 {
+    color: #eef5f7;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 0; }
+  .footer-area .footer-single p {
+    color: #9ba1ac;
+    font-size: 14px;
+    font-weight: 300; }
+  .footer-area .footer-single span {
+    font-weight: 700;
+    display: block;
+    color: #eef5f7;
+    margin: 10px 0; }
+
+.recent-posts:hover p {
+  color: #b8bfcb; }
+
+.form-signup {
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px; }
+  .form-signup .form-elem input {
+    display: block;
+    float: left; }
+  .form-signup .form-elem input[type=email] {
+    border: none;
+    margin: 0;
+    padding: 11px 35px;
+    border-radius: 20px;
+    background-color: #515359;
+    width: 85%;
+    -webkit-appearance: none;
+    appearance: none; }
+  .form-signup .form-elem input[placeholder] {
+    color: #9ba1ac;
+    font-size: 14px;
+    font-weight: 300; }
+  .form-signup .form-elem input[type=submit] {
+    background-color: #747980;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    margin: 0;
+    padding: 11px;
+    margin-left: -30px;
+    border-radius: 20px;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25%;
+    text-align: center; }
+
+ul.social li {
+  float: left; }
+  ul.social li i {
+    color: #4d5057;
+    font-size: 20px; }
+    ul.social li i:hover {
+      color: #85878d; }
+  ul.social li a {
+    display: block;
+    padding: 8px; }
+
+ul.social.head-social {
+  margin-right: 2%; }
+  ul.social.head-social li i {
+    color: #666666;
+    font-size: 16px; }
+  ul.social.head-social li a {
+    padding: 12px; }
+    ul.social.head-social li a:hover i {
+      color: #929090; }
+
+.hd-contact {
+  color: #2d2e2e;
+  font-size: 13px;
+  margin-top: 12px; }
+
+.footer-b {
+  padding-top: 25px;
+  padding-bottom: 30px;
+  margin-top: 25px;
+  font-size: 14px;
+  border-top: 1px solid #494c51; }
+  .footer-b p {
+    color: #9aa1ac; }
 
 .btn-prim {
   border-radius: 20px;
