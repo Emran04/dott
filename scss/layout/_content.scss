@@ -195,6 +195,13 @@ ul.brands {
 	li {
 		float: left;
 		width: 16.66667%;
+		@media #{$brk-narrow} {
+			width: 33.3333%;
+			padding: 5%;
+			img {
+				width: 100%;
+			}
+		}
 	}		
 }
 
@@ -231,6 +238,19 @@ ul.brands {
 			color: #eef5f7;
 			margin: 10px 0;
 		}
+
+		@media #{$brk-narrow} {
+			h3 {
+				margin-top: 30px;
+			}
+			.form-signup {
+				max-width: 460px;
+			}
+			.form-signup .form-elem input[type=submit] {
+	    	width: 18%;
+			}
+		}
+
 	}
 }
 
@@ -298,7 +318,15 @@ ul.social {
 }
 
 ul.social.head-social {
-	margin-right: 2%;
+margin-right: 2%;
+float: right;
+@media #{$brk-narrow} {
+	float: none;
+	min-height: 42px;
+	width: 70%;
+	margin: 0 auto;
+
+}
  li {
 		i {
 			color: #666666;

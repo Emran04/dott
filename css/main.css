@@ -71,6 +71,11 @@ button, input, select, textarea {
  ----------------------------------*/
 .header-top {
   background-color: #f6f6f6; }
+  @media (max-width: 768px) {
+    .header-top p.pull-left {
+      float: none !important; }
+    .header-top p {
+      text-align: center; } }
 
 .header-top p {
   color: #2d2e2e;
@@ -262,6 +267,12 @@ ul.main-menu-u {
 ul.brands li {
   float: left;
   width: 16.66667%; }
+  @media (max-width: 768px) {
+    ul.brands li {
+      width: 33.3333%;
+      padding: 5%; }
+      ul.brands li img {
+        width: 100%; } }
 
 .tweet-area {
   background-color: #40affd;
@@ -289,6 +300,13 @@ ul.brands li {
     display: block;
     color: #eef5f7;
     margin: 10px 0; }
+  @media (max-width: 768px) {
+    .footer-area .footer-single h3 {
+      margin-top: 30px; }
+    .footer-area .footer-single .form-signup {
+      max-width: 460px; }
+    .footer-area .footer-single .form-signup .form-elem input[type=submit] {
+      width: 18%; } }
 
 .recent-posts:hover p {
   color: #b8bfcb; }
@@ -339,7 +357,14 @@ ul.social li {
     padding: 8px; }
 
 ul.social.head-social {
-  margin-right: 2%; }
+  margin-right: 2%;
+  float: right; }
+  @media (max-width: 768px) {
+    ul.social.head-social {
+      float: none;
+      min-height: 42px;
+      width: 70%;
+      margin: 0 auto; } }
   ul.social.head-social li i {
     color: #666666;
     font-size: 16px; }

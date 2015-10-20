@@ -2,6 +2,15 @@
  ----------------------------------*/
  .header-top {
  	background-color: #f6f6f6;
+ 	@media #{$brk-narrow} {
+ 		p.pull-left {
+	    float: none!important;
+		}
+
+		p {
+ 			text-align: center;
+ 		}
+ 	}
  }
 
  .header-top p {
