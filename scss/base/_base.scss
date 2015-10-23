@@ -63,6 +63,10 @@ button, input, select, textarea {
   font-size   : 100%;
 }
 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
 *:focus {
 	outline: none;
 }

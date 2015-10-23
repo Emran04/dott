@@ -1,0 +1,47 @@
+
+.carousel-inner, .item {
+	min-height: 630px;
+}
+
+.item-1 {
+	background-size  : cover;
+	h1 {
+		animation-delay: 2s;
+	}
+	.btn-sec {
+		animation-delay: 3s;
+	}
+	p {
+		margin-top: 30px;
+		margin-bottom: 50px;
+		animation-delay: 1s;
+	}
+	img {
+		max-height: 500px;
+		position: relative;
+    top: 130px;
+    left: 0;
+	}
+}
+
+.carousel-inner:hover .slide-arrow {
+	opacity: 1;
+}
+.slide-arrow {
+	opacity: 0;
+	transition: .2s;
+	position: absolute;
+	top: 50%;
+	margin-top: -32px;
+	&.left {
+		left: 2%;
+	}
+	&.right {
+		right: 2%;
+	}
+}
+
+.slide-content {
+	padding-top: 80px;
+}
+

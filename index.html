@@ -12,12 +12,14 @@
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/animate.css">
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
+
     <header class="header">
       <div class="header-top">
         <div class="container">
@@ -57,14 +59,80 @@
       </nav>
     </header>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+
+<div id="main-slider" class="carousel slide">
+
+ 
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+
+    <div class="item active item-1" style="background-image : url(img/slide3.jpg)">
+      <div class="container slider-content">
+        <div class="row">
+          
+          <div class="col-sm-6">
+            <img data-animation="animated fadeInUp" src="img/1_1.png" alt="">
+          </div>
+
+          <div class="col-sm-6 slide-content">
+            <h1 data-animation="animated fadeInDown">The Best Solution to Harmonize Your Business and Win Time</h1>
+            <p data-animation="animated fadeIn">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+            <p><a class="btn btn-default btn-sec" data-animation="animated fadeInUp" href="#">Buy This Theme Now</a></p>
+          </div>
+
+        </div>
       </div>
     </div>
+
+ <div class="item item-1" style="background-image : url(img/slide2.jpg)">
+  <div class="container slider-content">
+    <div class="row">
+      
+      <div class="col-sm-6">
+        <img data-animation="animated fadeInUp" src="img/1_1.png" alt="">
+      </div>
+
+      <div class="col-sm-6 slide-content">
+        <h1 data-animation="animated fadeInDown">The Best Solution to Harmonize Your Business and Win Time</h1>
+        <p data-animation="animated fadeIn">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+        <p><a class="btn btn-default btn-sec" data-animation="animated fadeInUp" href="#">Buy This Theme Now</a></p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="item item-1" style="background-image : url(img/slide1.jpg)">
+  <div class="container slider-content">
+    <div class="row">
+      
+      <div class="col-sm-6">
+        <img data-animation="animated fadeInUp" src="img/1_1.png" alt="">
+      </div>
+
+      <div class="col-sm-6 slide-content">
+        <h1 data-animation="animated fadeInDown">The Best Solution to Harmonize Your Business and Win Time</h1>
+        <p data-animation="animated fadeIn">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+        <p><a class="btn btn-default btn-sec" data-animation="animated fadeInUp" href="#">Buy This Theme Now</a></p>
+      </div>
+
+    </div>
+  </div>
+</div>
+ 
+  <!-- Controls -->
+  <a class="slide-arrow left" href="#main-slider" role="button" data-slide="prev">
+    <img src="img/left-arrow.png" alt="left-arrow">
+  </a>
+  <a class="slide-arrow right" href="#main-slider" role="button" data-slide="next">
+    <img src="img/right-arrow.png" alt="right-arrow">
+  </a>
+</div> <!-- Carousel -->
+
+
 
     <div class="container">
       <div class="row">
@@ -85,6 +153,7 @@
         </div>
       </div>
     </div> <!-- /container -->
+
     <div class="promotions-area">
       <div class="container">
         <h2 class="promo-hd">We are the Agency of the Year</h2>
@@ -216,9 +285,9 @@
           </div>
         </div>
       </div>
-
     </div> 
     <!-- / project area -->
+
     <div class="brands-area">
       <div class="container">
         <ul class="brands clearfix">

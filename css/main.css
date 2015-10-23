@@ -53,6 +53,9 @@ button, input, select, textarea {
   font-family: inherit;
   font-size: 100%; }
 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+  outline: 0 none; }
+
 *:focus {
   outline: none; }
 
@@ -120,6 +123,42 @@ ul.main-menu-u {
 
 .navbar-toggle .icon-bar {
   background-color: #f6f6f6; }
+
+.carousel-inner, .item {
+  min-height: 630px; }
+
+.item-1 {
+  background-size: cover; }
+  .item-1 h1 {
+    animation-delay: 2s; }
+  .item-1 .btn-sec {
+    animation-delay: 3s; }
+  .item-1 p {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    animation-delay: 1s; }
+  .item-1 img {
+    max-height: 500px;
+    position: relative;
+    top: 130px;
+    left: 0; }
+
+.carousel-inner:hover .slide-arrow {
+  opacity: 1; }
+
+.slide-arrow {
+  opacity: 0;
+  transition: .2s;
+  position: absolute;
+  top: 50%;
+  margin-top: -32px; }
+  .slide-arrow.left {
+    left: 2%; }
+  .slide-arrow.right {
+    right: 2%; }
+
+.slide-content {
+  padding-top: 80px; }
 
 .project-details {
   text-align: center; }
