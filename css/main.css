@@ -124,19 +124,49 @@ ul.main-menu-u {
 .navbar-toggle .icon-bar {
   background-color: #f6f6f6; }
 
+.dropdown {
+  position: relative; }
+  .dropdown:hover ul.sub-menu {
+    opacity: 1; }
+
+@media (min-width: 769px) {
+  ul.sub-menu {
+    position: absolute;
+    left: 0;
+    top: 84px;
+    background-color: #fff;
+    z-index: 55;
+    width: 230px;
+    padding: 14px 0 15px;
+    display: inline-block;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    opacity: 0; }
+    ul.sub-menu li {
+      float: none; }
+      ul.sub-menu li a {
+        color: #2d2e2e;
+        font-size: 14px;
+        padding: 10px 30px;
+        font-weight: 300; }
+        ul.sub-menu li a:hover {
+          background-color: #fff;
+          color: #f04316; } }
 .carousel-inner, .item {
   min-height: 630px; }
 
 .item-1 {
   background-size: cover; }
   .item-1 h1 {
-    animation-delay: 2s; }
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s; }
   .item-1 .btn-sec {
-    animation-delay: 3s; }
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s; }
   .item-1 p {
     margin-top: 30px;
     margin-bottom: 50px;
-    animation-delay: 1s; }
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s; }
   .item-1 img {
     max-height: 500px;
     position: relative;
@@ -148,7 +178,8 @@ ul.main-menu-u {
 
 .slide-arrow {
   opacity: 0;
-  transition: .2s;
+  -webkit-transition: .2s;
+          transition: .2s;
   position: absolute;
   top: 50%;
   margin-top: -32px; }
@@ -161,7 +192,8 @@ ul.main-menu-u {
   padding-top: 80px; }
 
 .project-details {
-  text-align: center; }
+  text-align: center;
+  padding-top: 70px; }
   .project-details h3 {
     margin-top: 5px;
     position: relative;
@@ -184,7 +216,8 @@ ul.main-menu-u {
 
 .single-promo {
   margin-top: 60px;
-  transition: .3s ease-in-out 0s;
+  -webkit-transition: .3s ease-in-out 0s;
+          transition: .3s ease-in-out 0s;
   min-height: 180px; }
   @media (min-width: 768px) {
     .single-promo:hover {
@@ -195,7 +228,8 @@ ul.main-menu-u {
     margin-bottom: 20px; }
 
 .call-action-area {
-  background-color: #f6f6f6;
+  background: url("../img/bg-cta.jpg") center, #f6f6f6;
+  background-size: cover;
   padding: 80px 0 20px; }
 
 .call-action-hd {
@@ -208,7 +242,7 @@ ul.main-menu-u {
 
 .imac {
   text-align: center; }
-  @media (min-width: 768) {
+  @media (min-width: 768px) {
     .imac {
       text-align: right; } }
 
@@ -243,28 +277,31 @@ ul.main-menu-u {
   @media (max-width: 768px) {
     .single-project .project-overlay {
       opacity: 1; } }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     .single-project {
       position: relative;
       float: left;
       width: 20%;
-      background-color: #f6f6f6;
-      min-height: 320px; }
+      background-color: #f6f6f6; }
       .single-project:hover .project-overlay {
         opacity: 1; } }
 
 .project-overlay {
   padding: 15px; }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     .project-overlay {
       opacity: 0;
-      transition: .3s ease-in-out 0s;
+      -webkit-transition: .3s ease-in-out 0s;
+              transition: .3s ease-in-out 0s;
       position: absolute;
       left: 0;
       top: 0;
       width: 100%;
       height: 100%;
       background: rgba(239, 83, 43, 0.8); } }
+  @media (min-width: 1024px) and (max-width: 1260px) {
+    .project-overlay p {
+      display: none; } }
   .project-overlay h2 {
     position: relative;
     padding-bottom: 20px;
@@ -360,12 +397,13 @@ ul.brands li {
   .form-signup .form-elem input[type=email] {
     border: none;
     margin: 0;
-    padding: 11px 35px;
+    padding: 8px 18px;
     border-radius: 20px;
     background-color: #515359;
     width: 85%;
     -webkit-appearance: none;
-    appearance: none; }
+    -moz-appearance: none;
+         appearance: none; }
   .form-signup .form-elem input[placeholder] {
     color: #9ba1ac;
     font-size: 14px;
@@ -376,13 +414,18 @@ ul.brands li {
     font-size: 14px;
     border: none;
     margin: 0;
-    padding: 11px;
+    padding: 8px;
     margin-left: -30px;
     border-radius: 20px;
     -webkit-appearance: none;
-    appearance: none;
+    -moz-appearance: none;
+         appearance: none;
     width: 25%;
-    text-align: center; }
+    text-align: center;
+    -webkit-transition: background .3s ease-in-out 0s;
+            transition: background .3s ease-in-out 0s; }
+    .form-signup .form-elem input[type=submit]:hover {
+      background-color: #f04316; }
 
 ul.social li {
   float: left; }
@@ -433,7 +476,8 @@ ul.social.head-social {
   font-size: 14px;
   font-weight: 500;
   background-color: #2d2e2e;
-  transition: .2s ease-in-out 0s;
+  -webkit-transition: .2s ease-in-out 0s;
+          transition: .2s ease-in-out 0s;
   color: #fff; }
   .btn-prim:hover {
     background-color: #f04316;
@@ -446,7 +490,8 @@ ul.social.head-social {
   font-size: 14px;
   font-weight: 500;
   background-color: #f04316;
-  transition: .2s ease-in-out 0s;
+  -webkit-transition: .2s ease-in-out 0s;
+          transition: .2s ease-in-out 0s;
   color: #fff; }
   .btn-sec:hover {
     background-color: #2d2e2e;
@@ -454,5 +499,3 @@ ul.social.head-social {
 
 .btn {
   border-color: transparent; }
-
-/*# sourceMappingURL=main.css.map */

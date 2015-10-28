@@ -47,9 +47,24 @@
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="main-menu-u pull-right">
               <li><a href="#">Home</a></li>
-              <li><a href="#">Pages</a></li>
+              <li class="dropdown">
+                <a href="#">Pages</a>
+                <ul class="sub-menu">
+                  <li><a href="#">Sub Item1</a></li>
+                  <li><a href="#">Sub Item2</a></li>
+                  <li><a href="#">Sub Item2</a></li>
+                  <li><a href="#">Sub Item2</a></li>
+                </ul>
+              </li>
               <li><a href="#">Features</a></li>
-              <li><a href="#">Works</a></li>
+              <li class="dropdown"><a href="#">Works</a>
+                <ul class="sub-menu">
+                  <li><a href="#">Sub Item1</a></li>
+                  <li><a href="#">Sub Item2</a></li>
+                  <li><a href="#">Sub Item2</a></li>
+                  <li><a href="#">Sub Item2</a></li>
+                </ul>
+              </li>
               <li><a href="#">Blog</a></li>
               <li><a href="#">Shop</a></li>
               <li><a href="#">Contact</a></li>
@@ -60,7 +75,7 @@
     </header>
 
 
-<div id="main-slider" class="carousel slide">
+<div id="main-slider" class="carousel slide hidden-xs">
 
  
   <!-- Wrapper for slides -->
@@ -89,7 +104,7 @@
     <div class="row">
       
       <div class="col-sm-6">
-        <img data-animation="animated fadeInUp" src="img/1_1.png" alt="">
+        <img data-animation="animated fadeInUp" src="img/2_1.png" alt="">
       </div>
 
       <div class="col-sm-6 slide-content">
@@ -114,7 +129,7 @@
       </div>
 
       <div class="col-sm-6 slide-content">
-        <h1 data-animation="animated fadeInDown">The Best Solution to Harmonize Your Business and Win Time</h1>
+        <h1 data-animation="animated fadeInDown">Leading World Companies Trust Us in Management of Their Business </h1>
         <p data-animation="animated fadeIn">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
         <p><a class="btn btn-default btn-sec" data-animation="animated fadeInUp" href="#">Buy This Theme Now</a></p>
       </div>
@@ -130,6 +145,7 @@
   <a class="slide-arrow right" href="#main-slider" role="button" data-slide="next">
     <img src="img/right-arrow.png" alt="right-arrow">
   </a>
+  </div>
 </div> <!-- Carousel -->
 
 

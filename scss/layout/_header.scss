@@ -63,3 +63,41 @@
  .navbar-toggle .icon-bar {
  	background-color: #f6f6f6;
  }
+
+ .dropdown {
+	position: relative;
+	&:hover ul.sub-menu {
+		opacity: 1;
+	}
+ }
+
+ @media (min-width: 769px) {
+ 	ul.sub-menu {
+	position: absolute;
+	left: 0;
+	top: 84px;
+	background-color: #fff;
+	z-index: 55;
+	width: 230px;
+	padding: 14px 0 15px;
+	display: inline-block;
+	box-shadow: 0 1px 5px rgba(0,0,0,.2);
+	opacity: 0;
+	li {
+		float: none;
+		a {
+			color: $color-text-base;
+			font-size: 14px;
+			padding: 10px 30px;
+			font-weight: 300;
+			&:hover {
+				background-color: #fff;
+				color: $orange-lite;
+			}
+		}
+	}
+
+ }
+}
+
+ 

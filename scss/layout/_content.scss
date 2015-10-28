@@ -1,5 +1,6 @@
 .project-details {
 	text-align: center;
+	padding-top: 70px;
 	h3 {
 		margin-top: 5px;
 		position: relative;
@@ -45,7 +46,9 @@
 }
 
 .call-action-area {
-	background-color: #f6f6f6;
+	background: url('../img/bg-cta.jpg') center,
+										#f6f6f6;
+	background-size: cover;
 	padding: 80px 0 20px;
 }
 
@@ -62,9 +65,9 @@
 
 .imac {
 	text-align: center;
-	@media (min-width: 768) {
-		text-align: right;	
-	}
+	@media (min-width: 768px) {
+    text-align: right;
+  }
 }
 
 .action-btns {
@@ -108,12 +111,12 @@
 			}
 	}
 
-	@media (min-width: 768px) {
+	@media (min-width: 1024px) {
 		position: relative;
 		float: left;
 		width: 20%;
 		background-color: #f6f6f6;
-		min-height: 320px;
+		// min-height: 320px;
 		&:hover {
 			.project-overlay {
 				opacity: 1;
@@ -124,7 +127,7 @@
 
 .project-overlay {
 	padding: 15px;
-	@media (min-width: 768px) {
+	@media (min-width: 1024px) {
 		opacity: 0;
 		transition: .3s ease-in-out 0s;
 		position: absolute;
@@ -133,6 +136,11 @@
 		width: 100%;
 		height: 100%;
 		background:rgba(239, 83, 43, .8);
+	}
+	@media (min-width: 1024px) and (max-width: 1260px) {
+		p {
+			display: none;
+		}
 	}
 
 	h2 {
@@ -270,7 +278,7 @@ ul.brands {
 		input[type=email] {
 			border: none;
 			margin: 0;
-			padding: 11px 35px;
+			padding: 8px 18px;
 			border-radius: 20px;
 			background-color: #515359;
 			width: 85%;
@@ -288,13 +296,17 @@ ul.brands {
 			font-size: 14px;
 			border: none;
 			margin: 0;
-			padding: 11px;
+			padding: 8px;
 			margin-left: -30px;
 			border-radius: 20px;
 			-webkit-appearance: none;
 			appearance: none;
 			width: 25%;
 			text-align: center;
+			transition: background .3s ease-in-out 0s;
+			&:hover {
+				background-color: $color-sec;
+			}
 		}
 	}
 }
