@@ -18,6 +18,10 @@
 	font-size: 12px;
  }
 
+ .socil-links {
+ 	
+ }
+
  .main-menu {
  	background-color: $color-prim;
  }
@@ -97,7 +101,16 @@
 		}
 	}
 
+
  }
 }
 
+.main-menu {
+	width: 100%;
+}
+ .stuck {
+  position:fixed;
+  top:0;
+  z-index: 200;
+}
  

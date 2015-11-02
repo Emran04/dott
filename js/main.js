@@ -1,6 +1,3 @@
-/* Demo Scripts for Bootstrap Carousel and Animate.css article
-* on SitePoint by Maria Antonietta Perna
-*/
 (function( $ ) {
 
     //Function to animate slider captions 
@@ -38,3 +35,51 @@
     });
 
 })(jQuery);
+
+$(document).ready(function() {
+    $( '.dropdown' ).hover(
+        function(){
+            $(this).children('.sub-menu').slideDown(200);
+        },
+        function(){
+            $(this).children('.sub-menu').slideUp(200);
+        }
+    );
+}); // end ready
+
+var options = {
+  useEasing : true, 
+  useGrouping : true, 
+  separator : ',', 
+  decimal : '.', 
+  prefix : '', 
+  suffix : '' 
+};
+
+var numAnim = new CountUp("prj-count", 0, 3541, 0, 5, options);
+var numAnim2 = new CountUp("prj-count-2", 0, 4689, 0, 5, options);
+var numAnim3 = new CountUp("prj-count-3", 0, 2349, 0, 5, options);
+
+
+
+
+
+var $count = $(".count");
+
+$count.waypoint(function (direction) {
+    if (direction === 'down') {
+        numAnim.start();
+        numAnim2.start();
+        numAnim3.start();
+    }
+    else {
+      numAnim.reset();
+      numAnim2.reset();
+      numAnim3.reset();
+    }
+
+}, { offset: '50%' });
+
+var sticky = new Waypoint.Sticky({
+  element: $('.main-menu')[0]
+});
