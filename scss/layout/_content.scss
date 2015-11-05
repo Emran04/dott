@@ -18,6 +18,7 @@
 	text-align: center;
 	margin-top: 70px;
 	padding-bottom: 75px;
+	overflow: hidden;
 }
 
 .promo-hd {
@@ -31,6 +32,9 @@
 	margin-top: 60px;
 	transition: .3s ease-in-out 0s;
 	min-height: 180px;
+	animation-duration: 1.2s;
+	animation-delay: .2s;
+	opacity: 0;
 	@media (min-width: 768px) {
       &:hover {
         margin-top: 50px;
@@ -311,47 +315,6 @@ ul.brands {
 	}
 }
 
-ul.social {
-	li {
-		float: left;
-		i {
-			color: #4d5057;
-			font-size: 20px;
-			&:hover {
-				color: #85878d;
-			}
-		}
-
-		a {
-			display: block;
-			padding: 8px;
-		}
-	}
-}
-
-ul.social.head-social {
-margin-right: 2%;
-float: right;
-@media #{$brk-narrow} {
-	float: none;
-	min-height: 42px;
-	width: 70%;
-	margin: 0 auto;
-
-}
- li {
-		i {
-			color: #666666;
-			font-size: 16px;
-		}
-		a {
-			padding: 12px;
-			&:hover i {
-				color: #929090;
-			}
-		}
-	}
-}
 .hd-contact {
 	color: $color-text-base;
 	font-size: 13px;

@@ -2,25 +2,74 @@
  ----------------------------------*/
  .header-top {
  	background-color: #f6f6f6;
- 	@media #{$brk-narrow} {
- 		p.pull-left {
-	    float: none!important;
-		}
-
-		p {
- 			text-align: center;
- 		}
- 	}
  }
 
  .header-top p {
-	color: $color-text-base;
-	font-size: 12px;
+
+ }
+
+ .hd-top-contact {
+ 	float: left;
+ 	width: 40%;
+ 	p {
+ 		float: left;
+ 		color: $color-text-base;
+		font-size: 12px;
+		margin-top: 11px;
+		margin-bottom: 11px;
+		i {
+			margin-right: 5px;
+		}
+ 	}
+
+ 	.hd-top-contact-phone {
+ 		margin-right: 8px;
+ 	}
  }
 
  .socil-links {
- 	
+ 	float: right;
+ 	width: 60%;
  }
+
+ul.socil-links-ul {
+	float: right;
+	margin-right: 30px;
+	li {
+		float: left;
+		width: 30px;
+		i {
+			font-size: 16px;
+		}
+
+		a {
+			display: block;
+			line-height: 40px;
+			text-align: center;
+			color: #666;
+			transition: 300ms ease-in-out;
+			&:hover {
+				color: #fff;
+			}
+			&.s-fb:hover {
+				background-color: #5567A9;
+			}
+			&.s-ttr:hover {
+				background-color: #40AFFD;
+			}
+			&.s-gp:hover {
+				background-color: #BE4A39;
+			}
+			&.s-db:hover {
+				background-color: #F26798;
+			}
+			&.s-pi:hover {
+				background-color: #CB2027;
+			}
+
+		}
+	}
+}
 
  .main-menu {
  	background-color: $color-prim;

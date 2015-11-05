@@ -45,41 +45,58 @@ $(document).ready(function() {
             $(this).children('.sub-menu').slideUp(200);
         }
     );
+
+    
+    var options = {
+      useEasing : true, 
+      useGrouping : true, 
+      separator : ',', 
+      decimal : '.', 
+      prefix : '', 
+      suffix : '' 
+    };
+
+    var numAnim = new CountUp("prj-count", 0, 3541, 0, 5, options);
+    var numAnim2 = new CountUp("prj-count-2", 0, 4689, 0, 5, options);
+    var numAnim3 = new CountUp("prj-count-3", 0, 2349, 0, 5, options);
+
+
+
+
+
+    var $count = $(".count");
+    $count.waypoint(function (direction) {
+        if (direction === 'down') {
+            numAnim.start();
+            numAnim2.start();
+            numAnim3.start();
+        }
+        else {
+          numAnim.reset();
+          numAnim2.reset();
+          numAnim3.reset();
+          //$menu.removeClass('stuck');
+        }
+
+    }, { offset: '50%' });
+
+    var sticky = new Waypoint.Sticky({
+      element: $('.main-menu')[0]
+    });
 }); // end ready
 
-var options = {
-  useEasing : true, 
-  useGrouping : true, 
-  separator : ',', 
-  decimal : '.', 
-  prefix : '', 
-  suffix : '' 
-};
 
-var numAnim = new CountUp("prj-count", 0, 3541, 0, 5, options);
-var numAnim2 = new CountUp("prj-count-2", 0, 4689, 0, 5, options);
-var numAnim3 = new CountUp("prj-count-3", 0, 2349, 0, 5, options);
+(function($){
+    var $promo = $(".single-promo");
+    $promo.waypoint(function (direction) {
+        if (direction === 'down') {
+            $promo.css('opacity', '1').addClass("animated fadeInUp");
+            // $(".single-promo:first-child").addClass("animated fadeInLeft");
+            // $(".single-promo:last-child").addClass("animated fadeInRight");
+        }
+        else {
+            $promo.removeClass("animated fadeIn");
+        }
 
-
-
-
-
-var $count = $(".count");
-
-$count.waypoint(function (direction) {
-    if (direction === 'down') {
-        numAnim.start();
-        numAnim2.start();
-        numAnim3.start();
-    }
-    else {
-      numAnim.reset();
-      numAnim2.reset();
-      numAnim3.reset();
-    }
-
-}, { offset: '50%' });
-
-var sticky = new Waypoint.Sticky({
-  element: $('.main-menu')[0]
-});
+    }, { offset: '90%' });
+})(jQuery);
