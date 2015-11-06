@@ -4,9 +4,7 @@
  	background-color: #f6f6f6;
  }
 
- .header-top p {
 
- }
 
  .hd-top-contact {
  	float: left;
@@ -117,14 +115,12 @@ ul.socil-links-ul {
  	background-color: #f6f6f6;
  }
 
- .dropdown {
-	position: relative;
-	&:hover ul.sub-menu {
-		opacity: 1;
-	}
- }
+
 
  @media (min-width: 769px) {
+ 	.dropdown {
+		position: relative;
+	}
  	ul.sub-menu {
 	position: absolute;
 	left: 0;
@@ -135,7 +131,7 @@ ul.socil-links-ul {
 	padding: 14px 0 15px;
 	display: inline-block;
 	box-shadow: 0 1px 5px rgba(0,0,0,.2);
-	opacity: 0;
+	display: none;
 	li {
 		float: none;
 		a {
@@ -149,9 +145,13 @@ ul.socil-links-ul {
 			}
 		}
 	}
-
-
  }
+ .dropdown {
+	&:hover ul.sub-menu {
+		display: block;
+	}
+ }
+
 }
 
 .main-menu {

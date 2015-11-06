@@ -1,0 +1,26 @@
+// blog style
+.breadcrumb-area {
+	background-color: #f6f6f6;
+	.breadcrumb {
+		background: none;
+		margin-top: 3px;
+		margin-bottom: 3px;
+		li, a {
+			font-size: 12px;
+			font-weight: 400;
+			color: #666666;
+		}
+	}
+}
+
+.blog-hd {
+	text-align: center;
+	p {
+		font-weight: 300;
+	}
+}
+
+
+.blog-article {
+	background-color: #f6f6f6;
+}

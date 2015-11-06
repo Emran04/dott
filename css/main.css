@@ -160,12 +160,10 @@ ul.main-menu-u {
 .navbar-toggle .icon-bar {
   background-color: #f6f6f6; }
 
-.dropdown {
-  position: relative; }
-  .dropdown:hover ul.sub-menu {
-    opacity: 1; }
-
 @media (min-width: 769px) {
+  .dropdown {
+    position: relative; }
+
   ul.sub-menu {
     position: absolute;
     left: 0;
@@ -176,7 +174,7 @@ ul.main-menu-u {
     padding: 14px 0 15px;
     display: inline-block;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
-    opacity: 0; }
+    display: none; }
     ul.sub-menu li {
       float: none; }
       ul.sub-menu li a {
@@ -186,7 +184,10 @@ ul.main-menu-u {
         font-weight: 300; }
         ul.sub-menu li a:hover {
           background-color: #fff;
-          color: #f04316; } }
+          color: #f04316; }
+
+  .dropdown:hover ul.sub-menu {
+    display: block; } }
 .main-menu {
   width: 100%; }
 
@@ -479,6 +480,25 @@ ul.brands li {
   border-top: 1px solid #494c51; }
   .footer-b p {
     color: #9aa1ac; }
+
+.breadcrumb-area {
+  background-color: #f6f6f6; }
+  .breadcrumb-area .breadcrumb {
+    background: none;
+    margin-top: 3px;
+    margin-bottom: 3px; }
+    .breadcrumb-area .breadcrumb li, .breadcrumb-area .breadcrumb a {
+      font-size: 12px;
+      font-weight: 400;
+      color: #666666; }
+
+.blog-hd {
+  text-align: center; }
+  .blog-hd p {
+    font-weight: 300; }
+
+.blog-article {
+  background-color: #f6f6f6; }
 
 .btn-prim {
   border-radius: 20px;
