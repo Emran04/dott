@@ -46,7 +46,9 @@ $(document).ready(function() {
     //     }
     // );
 
-    
+    var sticky = new Waypoint.Sticky({
+      element: $('.main-menu')[0]
+    });    
     var options = {
       useEasing : true, 
       useGrouping : true, 
@@ -56,9 +58,9 @@ $(document).ready(function() {
       suffix : '' 
     };
 
-    var numAnim = new CountUp("prj-count", 0, 3541, 0, 5, options);
-    var numAnim2 = new CountUp("prj-count-2", 0, 4689, 0, 5, options);
-    var numAnim3 = new CountUp("prj-count-3", 0, 2349, 0, 5, options);
+    var numAnim = new CountUp("prj-count", 0, 3541, 0, 3, options);
+    var numAnim2 = new CountUp("prj-count-2", 0, 4689, 0, 3, options);
+    var numAnim3 = new CountUp("prj-count-3", 0, 2349, 0, 3, options);
 
 
 
@@ -80,9 +82,6 @@ $(document).ready(function() {
 
     }, { offset: '50%' });
 
-    var sticky = new Waypoint.Sticky({
-      element: $('.main-menu')[0]
-    });
 }); // end ready
 
 

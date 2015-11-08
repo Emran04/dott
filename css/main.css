@@ -61,11 +61,11 @@ button, input, select, textarea {
 
 /* Import partials
  ----------------------------------*/
-.project-details h3::after, .promo-hd::after, .single-promo h3::after, .call-action-hd::after, .project-hd h2::after, .project-overlay h2::after, .work-together h1::after {
+.project-details h3::after, .promo-hd::after, .single-promo h3::after, .call-action-hd::after, .project-hd h2::after, .project-overlay h2::after, .work-together h1::after, .blog-content h3::after {
   background-color: #2d2e2e;
   bottom: 0;
   content: "";
-  height: 2px;
+  height: 1px;
   position: absolute;
   right: 47%;
   width: 30px; }
@@ -481,6 +481,15 @@ ul.brands li {
   .footer-b p {
     color: #9aa1ac; }
 
+.footer-social-links {
+  float: left; }
+  .footer-social-links li {
+    float: left; }
+    .footer-social-links li a {
+      font-size: 16px;
+      color: #ccc;
+      padding: 10px 8px; }
+
 .breadcrumb-area {
   background-color: #f6f6f6; }
   .breadcrumb-area .breadcrumb {
@@ -500,9 +509,21 @@ ul.brands li {
 .blog-article {
   background-color: #f6f6f6; }
 
+.blog-content {
+  padding: 15px 20px 20px; }
+  .blog-content h3 {
+    position: relative;
+    padding-bottom: 20px; }
+    .blog-content h3::after {
+      left: 0; }
+    .blog-content h3 a {
+      font-weight: 400;
+      font-size: 20px;
+      color: #2d2e2e; }
+
 .btn-prim {
   border-radius: 20px;
-  padding: 10px 30px;
+  padding: 10px 20px;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 500;
@@ -515,7 +536,7 @@ ul.brands li {
 
 .btn-sec {
   border-radius: 20px;
-  padding: 10px 30px;
+  padding: 10px 20px;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 500;
