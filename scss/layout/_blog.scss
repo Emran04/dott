@@ -15,14 +15,20 @@
 
 .blog-hd {
 	text-align: center;
+	h2 {
+		margin-top: 60px;
+	}
 	p {
 		font-weight: 300;
+		margin: 40px 0 35px;
 	}
 }
 
 
 .blog-article {
 	background-color: #f6f6f6;
+	margin-top: 25px;
+	margin-bottom: 50px;
 }
 
 .blog-content {
@@ -38,9 +44,130 @@
 			font-weight: 400;
 			font-size: 20px;
 			color: $color-text-base;
+			&:hover {
+				color: $color-sec;
+			}
 		}
 	}
-	p {
+}
+
+.blog-meta {
+	color: #acacac;
+	font-size: 14px;
+	margin-bottom: 30px;
+	span {
+		display: inline-block;
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+	a {
+		color: #acacac;
+		font-size: 14px;
+		&:hover {
+			color: $color-sec;
+		}
+	}
+}
+
+.btn.read-more {
+	background-color: #747980;
+}
+
+// Sidebar styles
+.single-sidebar {
+	margin-bottom: 50px;
+}
+
+// search form
+.form-signup.search {
+	.form-elem {
+	}
+	input[name="s"] {
+		padding: 8px 30px 8px 15px;
+		color: #666666;
+		font-size: 14px;
+		font-weight: 300;
+		border: none;
+		background-color: #fff;
+		border: 1px solid #ddd;
+		border-right: none;
+	}
+	input[type=submit] {
+		padding: 9px;
+		border-radius: 20px;
+	}
+}
+
+.catagories {
+	.catagories-list {
+		li {
+			margin-top: 5px;
+			margin-bottom: 5px;
+			&:before {
+				content: "\f105";
+				font-family: FontAwesome;
+				left: 0;
+				top: 0;
+				font-size: 16px;
+			}
+
+			a {
+				font-size: 16px;
+				color: $color-text-lite;
+				display: inline-block;
+				margin-left: 8px;
+				font-weight: 300;
+				&:hover {
+					color: $color-sec;
+				}
+			}
+		}
+	}
+}
+.recent-posts-content {
+	margin-bottom: 15px;
+}
+.sidebar-recent-posts {
+	.recent-post-excerpt {
+		a {
+			color: $color-text-lite;
+			&:hover {
+			color: $color-sec;
+			}
+		}
 		
+	}
+
+	.recent-posts-meta {
+		color: #acacac;
+		font-size: 14px;
+		a {
+			color: #acacac;
+			font-size: 14px;
+			&:hover {
+				color: $color-sec;
+			}
+		}
+	}
+}
+
+.single-sidebar {
+	.tag-list {
+		li {
+			display: inline-block;
+			a {
+				display: block;
+				font-size: 14px;
+				color: $color-text-base;
+				background-color: #f6f6f6;
+				padding: 8px 12px;
+				border-radius: 20px;
+				margin: 8px 5px;
+				&:hover {
+					color: #fff;
+					background-color: $color-sec;
+				}
+			}
+		}
 	}
 }

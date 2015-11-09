@@ -171,7 +171,6 @@ ul.main-menu-u {
     background-color: #fff;
     z-index: 55;
     width: 230px;
-    padding: 14px 0 15px;
     display: inline-block;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
     display: none; }
@@ -437,7 +436,8 @@ ul.brands li {
   .form-signup .form-elem input {
     display: block;
     float: left; }
-  .form-signup .form-elem input[type=email] {
+  .form-signup .form-elem input[type=email],
+  .form-signup .form-elem input[name="s"] {
     border: none;
     margin: 0;
     padding: 8px 18px;
@@ -503,11 +503,16 @@ ul.brands li {
 
 .blog-hd {
   text-align: center; }
+  .blog-hd h2 {
+    margin-top: 60px; }
   .blog-hd p {
-    font-weight: 300; }
+    font-weight: 300;
+    margin: 40px 0 35px; }
 
 .blog-article {
-  background-color: #f6f6f6; }
+  background-color: #f6f6f6;
+  margin-top: 25px;
+  margin-bottom: 50px; }
 
 .blog-content {
   padding: 15px 20px 20px; }
@@ -520,6 +525,89 @@ ul.brands li {
       font-weight: 400;
       font-size: 20px;
       color: #2d2e2e; }
+      .blog-content h3 a:hover {
+        color: #f04316; }
+
+.blog-meta {
+  color: #acacac;
+  font-size: 14px;
+  margin-bottom: 30px; }
+  .blog-meta span {
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px; }
+  .blog-meta a {
+    color: #acacac;
+    font-size: 14px; }
+    .blog-meta a:hover {
+      color: #f04316; }
+
+.btn.read-more {
+  background-color: #747980; }
+
+.single-sidebar {
+  margin-bottom: 50px; }
+
+.form-signup.search input[name="s"] {
+  padding: 8px 30px 8px 15px;
+  color: #666666;
+  font-size: 14px;
+  font-weight: 300;
+  border: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-right: none; }
+.form-signup.search input[type=submit] {
+  padding: 9px;
+  border-radius: 20px; }
+
+.catagories .catagories-list li {
+  margin-top: 5px;
+  margin-bottom: 5px; }
+  .catagories .catagories-list li:before {
+    content: "\f105";
+    font-family: FontAwesome;
+    left: 0;
+    top: 0;
+    font-size: 16px; }
+  .catagories .catagories-list li a {
+    font-size: 16px;
+    color: #666666;
+    display: inline-block;
+    margin-left: 8px;
+    font-weight: 300; }
+    .catagories .catagories-list li a:hover {
+      color: #f04316; }
+
+.recent-posts-content {
+  margin-bottom: 15px; }
+
+.sidebar-recent-posts .recent-post-excerpt a {
+  color: #666666; }
+  .sidebar-recent-posts .recent-post-excerpt a:hover {
+    color: #f04316; }
+.sidebar-recent-posts .recent-posts-meta {
+  color: #acacac;
+  font-size: 14px; }
+  .sidebar-recent-posts .recent-posts-meta a {
+    color: #acacac;
+    font-size: 14px; }
+    .sidebar-recent-posts .recent-posts-meta a:hover {
+      color: #f04316; }
+
+.single-sidebar .tag-list li {
+  display: inline-block; }
+  .single-sidebar .tag-list li a {
+    display: block;
+    font-size: 14px;
+    color: #2d2e2e;
+    background-color: #f6f6f6;
+    padding: 8px 12px;
+    border-radius: 20px;
+    margin: 8px 5px; }
+    .single-sidebar .tag-list li a:hover {
+      color: #fff;
+      background-color: #f04316; }
 
 .btn-prim {
   border-radius: 20px;
