@@ -10,3 +10,19 @@
 			width: 30px;
 		}
 	}
+
+	%clearfix {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	%input {
+		padding: 8px 30px 8px 15px;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 300;
+    border: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+	}

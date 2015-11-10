@@ -32,8 +32,9 @@
 	margin-top: 60px;
 	transition: .3s ease-in-out 0s;
 	min-height: 180px;
-	animation-duration: 1.2s;
+	animation-duration: .8s;
 	animation-delay: .2s;
+	animation-timing-function: ease-out;
 	opacity: 0;
 	@media (min-width: 768px) {
       &:hover {
