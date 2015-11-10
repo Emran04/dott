@@ -39,6 +39,9 @@
 
 
 (function($){
+    var sticky = new Waypoint.Sticky({
+        element: $('.main-menu')[0]
+    });
     var $promo = $(".single-promo");
     $promo.waypoint(function (direction) {
         if (direction === 'down') {
