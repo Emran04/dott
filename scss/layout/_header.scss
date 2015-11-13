@@ -35,7 +35,7 @@ ul.socil-links-ul {
 	margin-right: 30px;
 	li {
 		float: left;
-		width: 30px;
+		width: 3em;
 		i {
 			font-size: 16px;
 		}
@@ -128,9 +128,9 @@ ul.socil-links-ul {
 	background-color: #fff;
 	z-index: 55;
 	width: 230px;
-	display: inline-block;
 	box-shadow: 0 1px 5px rgba(0,0,0,.2);
 	display: none;
+	transition: .6s ease-in-out 0s;
 	li {
 		float: none;
 		a {

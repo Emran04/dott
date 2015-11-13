@@ -4,8 +4,9 @@
  ----------------------------------*/
 /* Base Styles
  ----------------------------------*/
-* {
-  box-sizing: border-box; }
+*, *:before, *:after {
+  box-sizing: border-box;
+  transition: all .3 ease-in-out 0s; }
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -112,7 +113,7 @@ ul.socil-links-ul {
   margin-right: 30px; }
   ul.socil-links-ul li {
     float: left;
-    width: 30px; }
+    width: 3em; }
     ul.socil-links-ul li i {
       font-size: 16px; }
     ul.socil-links-ul li a {
@@ -185,9 +186,9 @@ ul.main-menu-u {
     background-color: #fff;
     z-index: 55;
     width: 230px;
-    display: inline-block;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
-    display: none; }
+    display: none;
+    transition: .6s ease-in-out 0s; }
     ul.sub-menu li {
       float: none; }
       ul.sub-menu li a {
