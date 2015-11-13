@@ -121,7 +121,6 @@ ul.socil-links-ul {
       line-height: 40px;
       text-align: center;
       color: #666;
-      -webkit-transition: 300ms ease-in-out;
       transition: 300ms ease-in-out; }
       ul.socil-links-ul li a:hover {
         color: #fff; }
@@ -217,16 +216,13 @@ ul.main-menu-u {
 .item-1 {
   background-size: cover; }
   .item-1 h1 {
-    -webkit-animation-delay: 2s;
-            animation-delay: 2s; }
+    animation-delay: 2s; }
   .item-1 .btn-sec {
-    -webkit-animation-delay: 3s;
-            animation-delay: 3s; }
+    animation-delay: 3s; }
   .item-1 p {
     margin-top: 30px;
     margin-bottom: 50px;
-    -webkit-animation-delay: 1s;
-            animation-delay: 1s; }
+    animation-delay: 1s; }
   .item-1 img {
     max-height: 500px;
     position: relative;
@@ -238,7 +234,6 @@ ul.main-menu-u {
 
 .slide-arrow {
   opacity: 0;
-  -webkit-transition: .2s;
   transition: .2s;
   position: absolute;
   top: 50%;
@@ -277,19 +272,11 @@ ul.main-menu-u {
 
 .single-promo {
   margin-top: 60px;
-  -webkit-transition: .3s ease-in-out 0s;
   transition: .3s ease-in-out 0s;
   min-height: 180px;
-<<<<<<< HEAD
   animation-duration: .8s;
   animation-delay: .2s;
   animation-timing-function: ease-out;
-=======
-  -webkit-animation-duration: 1.2s;
-          animation-duration: 1.2s;
-  -webkit-animation-delay: .2s;
-          animation-delay: .2s;
->>>>>>> fe48e5fc5a6ecc9caae9bfb4aa06c1d2774bbfcb
   opacity: 0; }
   @media (min-width: 768px) {
     .single-promo:hover {
@@ -363,7 +350,6 @@ ul.main-menu-u {
   @media (min-width: 1024px) {
     .project-overlay {
       opacity: 0;
-      -webkit-transition: .3s ease-in-out 0s;
       transition: .3s ease-in-out 0s;
       position: absolute;
       left: 0;
@@ -475,8 +461,7 @@ ul.brands li {
     background-color: #515359;
     width: 85%;
     -webkit-appearance: none;
-    -moz-appearance: none;
-         appearance: none; }
+    appearance: none; }
   .form-signup .form-elem input[placeholder] {
     color: #9ba1ac;
     font-size: 14px;
@@ -491,11 +476,9 @@ ul.brands li {
     margin-left: -30px;
     border-radius: 20px;
     -webkit-appearance: none;
-    -moz-appearance: none;
-         appearance: none;
+    appearance: none;
     width: 25%;
     text-align: center;
-    -webkit-transition: background .3s ease-in-out 0s;
     transition: background .3s ease-in-out 0s; }
     .form-signup .form-elem input[type=submit]:hover {
       background-color: #f04316; }
@@ -719,7 +702,6 @@ ul.brands li {
   font-size: 14px;
   font-weight: 500;
   background-color: #2d2e2e;
-  -webkit-transition: .2s ease-in-out 0s;
   transition: .2s ease-in-out 0s;
   color: #fff; }
   .btn-prim:hover {
@@ -733,7 +715,6 @@ ul.brands li {
   font-size: 14px;
   font-weight: 500;
   background-color: #f04316;
-  -webkit-transition: .2s ease-in-out 0s;
   transition: .2s ease-in-out 0s;
   color: #fff; }
   .btn-sec:hover {
@@ -742,3 +723,5 @@ ul.brands li {
 
 .btn {
   border-color: transparent; }
+
+/*# sourceMappingURL=main.css.map */
